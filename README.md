@@ -129,19 +129,30 @@ Before you begin, ensure you have the following installed:
 ```
 aitripplanner/
 ├── frontend/           # React frontend application
-│   ├── src/
+│   ├── src/           # Source code
 │   │   ├── components/ # Reusable UI components
 │   │   ├── pages/     # Page components
 │   │   └── App.js     # Main application component
 │   ├── public/        # Static files
 │   └── package.json   # Frontend dependencies
 ├── backend/           # Node.js/Express backend server
-│   ├── src/
-│   │   ├── routes/    # API route handlers
-│   │   └── index.js   # Server entry point
-│   └── package.json   # Backend dependencies
+│   ├── src/          # Source code
+│   ├── models/       # Database models and schemas
+│   ├── routes/       # API route handlers
+│   ├── logs/         # Application logs
+│   └── package.json  # Backend dependencies
+├── .gitignore        # Git ignore rules
 └── README.md         # Project documentation
 ```
+
+## Backend Organization
+
+The backend is organized into several key directories:
+
+- `src/`: Contains the main application code and server configuration
+- `models/`: Contains database models and schemas for data persistence
+- `routes/`: Contains API route handlers and controllers
+- `logs/`: Stores application logs for debugging and monitoring
 
 ## API Documentation
 
@@ -256,4 +267,4 @@ Generates a personalized travel itinerary based on user preferences.
 
 ## License
 
-MIT 
+MIT "# Ai_trip_planner" 
